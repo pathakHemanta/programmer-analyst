@@ -1,0 +1,12 @@
+.primaryButton:hover {
+    background-color: #7A2026;
+}
+
+.primaryButton:active {
+    background-color: #340507;
+}
+
+.primaryButton:focus{
+    border: 1px solid white;
+    outline: #3DBBDB solid;
+}
