@@ -1,3 +1,11 @@
+.primaryButton {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background-color: #501214;
+    color: white;
+}
+
 .primaryButton:hover {
     background-color: #7A2026;
 }
@@ -8,5 +16,6 @@
 
 .primaryButton:focus{
     border: 1px solid white;
-    outline: #3DBBDB solid;
+    outline: 1px #3DBBDB solid;
+    border-radius: 2px;
 }

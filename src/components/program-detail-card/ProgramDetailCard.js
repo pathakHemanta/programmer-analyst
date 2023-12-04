@@ -20,7 +20,7 @@ const ProgramDetailCard = ({}) => {
       </section>
       <section className="flex justify-between gap-[0.15rem]">
         <button className="bg-[#D6D3D1] w-[50%] font-light">
-          Manager Users
+          Manage Users
         </button>
         <button className="bg-[#D6D3D1] w-[50%] font-light">Disable</button>
       </section>
