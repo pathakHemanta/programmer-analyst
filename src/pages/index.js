@@ -1,5 +1,7 @@
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
+import PencilIcon from "@/components/icons/PencilIcon";
+import StoreIcon from "@/components/icons/StoreIcon";
 import NavigationBar from "@/components/nav-bar/NavigationBar";
 import Search from "@/components/search-bar/Search";
 
@@ -12,6 +14,8 @@ export default function Home() {
         <PrimaryButton />
 
         <SecondaryButton />
+        <PencilIcon />
+        <StoreIcon />
       </main>
     </>
   );

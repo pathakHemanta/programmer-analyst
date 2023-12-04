@@ -8,7 +8,7 @@ const SecondaryButton = () => {
         className={`flex gap-3 p-3 bg-[#D4D4D4] ${styles.secondaryButton}`}
       >
         Secondary button
-        <RiPencilFill className="inline" size={20} />
+        <RiPencilFill className="inline" size={23} />
       </button>
     </>
   );

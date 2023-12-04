@@ -6,7 +6,7 @@ import "./NavigationBar.module.css";
 
 const NavigationBar = () => {
   return (
-    <header id="navigation" className=" text-white">
+    <header id="navigation" className="text-white">
       <nav className="flex justify-between bg-[#501214]">
         <div className="flex gap-1">
           <div className="p-3 bg-[#340507]">
