@@ -13,22 +13,22 @@ const Search = ({
   total,
 }) => {
   return (
-    <div className={`flex ${styles.search}`}>
-      <form className="flex justify-between p-3 border-2 border-[#57534E] m-2 rounded-sm transition duration-75 sm:w-[35%] w-[70%]">
+    <div className={`${styles.search}`}>
+      <form className={`${styles.searchBar}`}>
         <input
           id={id}
           type="text"
           name={name}
           onChange={onChange}
           value={value}
-          className="w-[85%] focus:outline-none"
+          className={`${styles.searchValue}`}
           placeholder={placeholder}
         />
         <button onClick={onClick}>
-          <IoMdSearch className="" size={25}></IoMdSearch>
+          <IoMdSearch size={25}></IoMdSearch>
         </button>
       </form>
-      <p className="py-5 px-1">
+      <p className={`${styles.helper}`}>
         Viewing {count} of {total}
       </p>
     </div>

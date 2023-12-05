@@ -1,9 +1,9 @@
 import { PiStorefrontLight } from "react-icons/pi";
 import styles from "./StoreIcon.module.css";
 
-const StoreIcon = () => {
+const StoreIcon = ({ onClick }) => {
   return (
-    <button className={`${styles.storeIcon}`}>
+    <button className={`${styles.storeIcon}`} onClick={onClick}>
       <PiStorefrontLight size={23} />
     </button>
   );

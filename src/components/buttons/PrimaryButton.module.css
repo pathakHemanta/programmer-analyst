@@ -1,7 +1,7 @@
 .primaryButton {
     display: flex;
     gap: 0.5rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     background-color: #501214;
     color: white;
 }

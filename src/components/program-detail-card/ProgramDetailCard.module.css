@@ -1,0 +1,35 @@
+.card {
+    width: fit-content;
+    background-color: #F5F5F4;
+    box-shadow: 0 0 3px 2px #D6D3D1;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    font-weight: 300;
+}
+
+.descriptionH3{
+    color: #00507A;
+    font-weight: 700;
+}
+
+.descriptionH4 {
+    color: #525252;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.15rem;
+}
+
+@media (min-width: 640px) {
+     .card {
+        width: 400px;
+     }
+}
+

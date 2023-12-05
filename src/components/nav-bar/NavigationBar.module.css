@@ -1,0 +1,80 @@
+.navBar {
+    color: white;
+}
+
+.primaryNav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #501214;
+}
+
+.menu {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.menuButton1 {
+    padding: 0.75rem;
+    background-color: #340507;
+    font-size: 0.4rem;
+}
+
+.menuButton2 {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.menuButton2Icon {
+    margin-top: 1rem;
+    background-color: white;
+    color: #501214;
+    border-radius: 0.125rem;
+}
+
+.menuButton2Label {
+    padding-top: 0.75rem;
+}
+
+.profile {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.5rem;
+}
+
+.profileButton {
+    background-color: white;
+    color: #340507;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 0.5rem;
+    letter-spacing: -0.05rem;
+}
+
+.notify {
+    position: absolute;
+    right: 0.01rem;
+    bottom: 0.05rem;
+    border-radius: 50%;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: #BFF3FD;
+    border: 1px #340507 solid;
+
+}
+
+.secondaryNav {
+    background-color: #E7E5E4;
+}
+
+.secondNavButton {
+    display: flex;
+    color: black;
+    padding: 0.5rem 2%;
+
+}
+
+.secondaryNavIcon {
+    margin: 0.25rem 0.25rem;
+}
+
