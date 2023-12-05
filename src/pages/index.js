@@ -25,6 +25,7 @@ export default function Home() {
   return (
     <>
       <NavigationBar
+        pageLabel={"Outcomes Assessment"}
         profilePicture={"WW"}
         text={"Applied Arts Department and Programs"}
       ></NavigationBar>
@@ -36,33 +37,35 @@ export default function Home() {
         count={2}
         total={4}
       />
-      <main className="flex flex-col gap-2">
-        {/* <section className="flex justify-center gap-2">
-          <PrimaryButton label="Primary Button" displayIcon={true} />
+      {/* <section className="flex justify-center gap-2">
+        <PrimaryButton label="Primary Button" displayIcon={true} />
 
-          <SecondaryButton label={"Secondary Button"} displayIcon={true} />
-          <PencilIcon pencilColor={"dark"} />
-          <StoreIcon />
-          <ButtonPair
-            leftLabel={"Enable Departments"}
-            rightLabel={"Disable Departments"}
-          />
-        </section> */}
+        <SecondaryButton label={"Secondary Button"} displayIcon={true} />
+        <PencilIcon pencilColor={"dark"} />
+        <StoreIcon />
         <ButtonPair
+          enabledValue={1}
+          disabledValue={0}
           leftLabel={"Enable Departments"}
           rightLabel={"Disable Departments"}
         />
-        <CardContainer
-          containerHeading={"Organization, Workforce, and Leadership Studies"}
-        />
-        {/* <section className="flex justify-center">
+      </section> */}
+      <ButtonPair
+        enabledValue={1}
+        disabledValue={0}
+        leftLabel={"Enable Departments"}
+        rightLabel={"Disable Departments"}
+      />
+      <CardContainer
+        containerHeading={"Organization, Workforce, and Leadership Studies"}
+      />
+      {/* <section className="flex justify-center">
           <ProgramDetailCard
             mainHeading={"Interdisciplinary Studies (MAIS|MSIS)"}
             secondaryHeading={"30.99 Undergraduate 18 years"}
             description={"Student Learning (UG)"}
           />
         </section> */}
-      </main>
     </>
   );
 }
