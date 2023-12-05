@@ -15,7 +15,7 @@ const ProgramDetailCard = ({
         <section>
           <h3 className={`${styles.descriptionH3}`}>{mainHeading}</h3>
           <h4 className={`${styles.descriptionH4}`}>{secondaryHeading}</h4>
-          <p>{description}</p>
+          <span>{description}</span>
         </section>
         <section>
           <PencilIcon pencilColor={"dark"} onClick={onClickPencil} />

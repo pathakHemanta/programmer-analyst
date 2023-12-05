@@ -1,8 +1,11 @@
 .primaryButton {
     display: flex;
-    gap: 0.5rem;
-    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
     background-color: #501214;
+    border: none;
     color: white;
 }
 

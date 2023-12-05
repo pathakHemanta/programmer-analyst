@@ -1,9 +1,11 @@
 .secondaryButton {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.75rem;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
     background-color: #D4D4D4;
+    border: none;
 }
 
 .secondaryButton:hover {

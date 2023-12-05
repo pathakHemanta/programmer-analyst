@@ -5,7 +5,7 @@ const PrimaryButton = ({ label, displayIcon, onClick }) => {
   return (
     <button className={`${styles.primaryButton}`} onClick={onClick}>
       {label}
-      {displayIcon && <RiPencilFill size={23} />}
+      {displayIcon && <RiPencilFill size={20} />}
     </button>
   );
 };

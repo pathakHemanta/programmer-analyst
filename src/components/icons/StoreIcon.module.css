@@ -1,6 +1,8 @@
 .storeIcon {
     background-color: #737373;
-    padding: 0.5rem;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
     color: white;
 }
 

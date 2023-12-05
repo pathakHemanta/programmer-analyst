@@ -10,7 +10,7 @@ const CardContainer = ({ containerHeading }) => {
   return (
     <article className={`${styles.container}`}>
       <section className={`${styles.containerNav}`}>
-        <h3 className={`${styles.containerHeader}`}>{containerHeading}</h3>
+        <span className={`${styles.containerHeader}`}>{containerHeading}</span>
         <section className={`${styles.containerButtons1}`}>
           <PencilIcon />
           <StoreIcon />
@@ -18,8 +18,10 @@ const CardContainer = ({ containerHeading }) => {
       </section>
       <section className={`${styles.containerButtons2}`}>
         <ButtonPair
-          leftLabel={"Enable Departments"}
-          rightLabel={"Disable Departments"}
+          enabledValue={3}
+          disabledValue={0}
+          leftLabel={"Enable"}
+          rightLabel={"Disable"}
         />
         <PrimaryButton label={"Add Program"} displayIcon={false} />
       </section>

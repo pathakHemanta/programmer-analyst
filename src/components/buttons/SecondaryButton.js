@@ -11,7 +11,7 @@ const SecondaryButton = ({ label, displayIcon, width, onClick }) => {
       onClick={onClick}
     >
       {label}
-      {displayIcon && <RiPencilFill size={23} />}
+      {displayIcon && <RiPencilFill size={20} />}
     </button>
   );
 };

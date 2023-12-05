@@ -1,6 +1,8 @@
 .blackPencilIcon {
     background-color: #D6D3D1;
-    padding: 0.5rem;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
 }
 
 .blackPencilIcon:hover {
@@ -20,7 +22,9 @@
 
 .whitePencilIcon {
     background-color: #737373;
-    padding: 0.5rem;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
     color: white;
 }
 

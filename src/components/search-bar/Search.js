@@ -14,7 +14,7 @@ const Search = ({
 }) => {
   return (
     <div className={`${styles.search}`}>
-      <form className={`${styles.searchBar}`}>
+      <form className={`${styles.searchBar}`} role="Search" aria-label="Search">
         <input
           id={id}
           type="text"
@@ -24,11 +24,15 @@ const Search = ({
           className={`${styles.searchValue}`}
           placeholder={placeholder}
         />
-        <button onClick={onClick}>
-          <IoMdSearch size={25}></IoMdSearch>
+        <button
+          onClick={onClick}
+          className={`${styles.searchIcon}`}
+          aria-label="Search Button"
+        >
+          <IoMdSearch size={20}></IoMdSearch>
         </button>
       </form>
-      <p className={`${styles.helper}`}>
+      <p className={`${styles.helper}`} role="status" aria-live="assertive">
         Viewing {count} of {total}
       </p>
     </div>

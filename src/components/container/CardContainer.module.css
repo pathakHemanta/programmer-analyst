@@ -1,51 +1,37 @@
 .container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     background-color: #E5E5E5;
-    margin: 3px 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .containerNav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #525252;
-    padding: 7px 15px;
+    padding: 10px;
 }
 
 .containerHeader {
-    padding: 7px ;
     color: white;
 }
 
 .containerButtons1 {
     display: flex;
-    gap: 0.25rem;
+    gap: 4px;
 }
 
 .containerButtons2 {
     display: flex;
-    gap: 2px;
-    margin: 15px 13px 0;
+    gap: 1%;
+    padding: 12px;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 3rem;
-    margin: 30px 13px;
-}
-
-@media (max-width: 640px) {
-    .containerButtons1 {
-        width: fit-content;
-    }
-    .cards {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (min-width:640px) and (max-width: 1024px) {
-    .cards {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }

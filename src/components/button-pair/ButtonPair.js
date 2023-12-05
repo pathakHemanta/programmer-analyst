@@ -1,14 +1,21 @@
 import styles from "./ButtonPair.module.css";
 
-const ButtonPair = ({ leftLabel, rightLabel, onClickLeft, onClickRight }) => {
+const ButtonPair = ({
+  enabledValue,
+  disabledValue,
+  leftLabel,
+  rightLabel,
+  onClickLeft,
+  onClickRight,
+}) => {
   return (
     <div className={`${styles.buttonPair}`}>
       <button className={`${styles.leftButton}`} onClick={onClickLeft}>
-        <span className={`${styles.leftCount}`}>1</span>
+        <span className={`${styles.leftCount}`}>{enabledValue}</span>
         <span>{leftLabel}</span>
       </button>
       <button className={`${styles.rightButton}`} onClick={onClickRight}>
-        <span className={`${styles.rightCount}`}>2</span>
+        <span className={`${styles.rightCount}`}>{disabledValue}</span>
         <span>{rightLabel}</span>
       </button>
     </div>

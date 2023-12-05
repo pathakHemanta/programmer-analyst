@@ -12,7 +12,7 @@ const PencilIcon = ({ pencilColor, onClick }) => {
 
   return (
     <button className={buttonStyle} onClick={onClick}>
-      <RiPencilFill size={23} />
+      <RiPencilFill size={18} />
     </button>
   );
 };
