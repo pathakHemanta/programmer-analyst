@@ -29,6 +29,10 @@
     color: white;
 }
 
+.pageLabel {
+    font-size: large;
+}
+
 .menuButton2Icon {
     background-color: white;
     color: #501214;

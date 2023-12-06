@@ -1,7 +1,7 @@
 import { RiPencilFill } from "react-icons/ri";
 import styles from "./PencilIcon.module.css";
 
-const PencilIcon = ({ pencilColor, onClick }) => {
+const PencilIcon = ({ pencilColor, altText, onClick }) => {
   let buttonStyle = styles.whitePencilIcon;
 
   switch (pencilColor) {
@@ -11,7 +11,12 @@ const PencilIcon = ({ pencilColor, onClick }) => {
   }
 
   return (
-    <button className={buttonStyle} onClick={onClick}>
+    <button
+      className={buttonStyle}
+      onClick={onClick}
+      role="button"
+      aria-label={`Edit ${altText}`}
+    >
       <RiPencilFill size={18} />
     </button>
   );

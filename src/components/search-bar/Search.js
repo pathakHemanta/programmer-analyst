@@ -14,7 +14,11 @@ const Search = ({
 }) => {
   return (
     <div className={`${styles.search}`}>
-      <form className={`${styles.searchBar}`} role="Search" aria-label="Search">
+      <form
+        className={`${styles.searchBar}`}
+        role="searchbox"
+        aria-label="Search"
+      >
         <input
           id={id}
           type="text"
@@ -23,6 +27,7 @@ const Search = ({
           value={value}
           className={`${styles.searchValue}`}
           placeholder={placeholder}
+          aria-label={`Enter ${placeholder}`}
         />
         <button
           onClick={onClick}

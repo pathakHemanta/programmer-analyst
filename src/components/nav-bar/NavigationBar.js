@@ -24,6 +24,7 @@ const NavigationBar = ({
           <button
             className={`${styles.menuButton1}`}
             onClick={onClickMenuButton}
+            role="button"
             aria-label="Toggle Menu"
           >
             <IoMdMenu size={18} />
@@ -33,13 +34,14 @@ const NavigationBar = ({
           <button
             className={`${styles.menuButton2}`}
             onClick={onClickHeadingButton}
+            role="button"
             aria-label={`Toggle ${pageLabel}`}
           >
             <CgPlayListCheck
               className={`${styles.menuButton2Icon}`}
               size={20}
             />
-            <span>{pageLabel}</span>
+            <span className={`${styles.pageLabel}`}>{pageLabel}</span>
           </button>
         </div>
         <div
