@@ -50,8 +50,9 @@ const CardContainer = ({
       </section>
 
       <section className={`${styles.cards}`}>
-        {cardObjects.map((card) => (
+        {cardObjects?.map((card) => (
           <ProgramDetailCard
+            key={cardObjects.indexOf(card)}
             mainHeading={card.programName}
             secondaryHeading={card.programDuration}
             description={card.programType}
