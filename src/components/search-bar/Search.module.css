@@ -2,22 +2,21 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    width: 100%;
+    width: 80%;
     transition: width 2s;
 }
 
 .searchBar {
     display: flex;
-    justify-content: space-between;
     padding: 4px;
     border: 1px #57534E solid;  
     border-radius: 2px; 
-    width: 60%;
+    width: 100%; 
 }
 
 .searchValue {
     border: none;
-    width: 60%;
+     width: 100%; 
     outline: none;
 }
 
@@ -26,9 +25,13 @@
     border: none;
 }
 
+.helper { 
+    width: 100%;
+}
+
 @media (min-width: 640px) {
     .search {
-        width: 60%;
+        width: 90%;
     }
     
 }

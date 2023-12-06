@@ -9,6 +9,8 @@ const SecondaryButton = ({ label, displayIcon, width, onClick }) => {
       className={`${styles.secondaryButton}`}
       style={buttonStyle}
       onClick={onClick}
+      role="button"
+      aria-label={`${label}`}
     >
       {label}
       {displayIcon && <RiPencilFill size={20} />}

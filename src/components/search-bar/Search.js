@@ -23,6 +23,7 @@ const Search = ({
           value={value}
           className={`${styles.searchValue}`}
           placeholder={placeholder}
+          aria-label={`Enter ${placeholder}`}
         />
         <button
           onClick={onClick}
