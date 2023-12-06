@@ -1,0 +1,21 @@
+.box {
+    width: max-content;
+    border: 1px solid #E7E5E4;
+    padding: 2px 8pxd;
+}
+
+.heading {
+    text-decoration: underline;
+    margin: none;
+    color: #00507A;
+}
+
+
+@media (max-width: 800px){
+    .box {
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+}
+
