@@ -16,8 +16,8 @@ const Search = ({
     <div className={`${styles.search}`}>
       <form
         className={`${styles.searchBar}`}
-        role="searchbox"
-        aria-label="Search"
+        role="search"
+        aria-label={`Search ${placeholder}`}
       >
         <input
           id={id}

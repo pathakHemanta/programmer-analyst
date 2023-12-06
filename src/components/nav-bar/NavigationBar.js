@@ -52,7 +52,7 @@ const NavigationBar = ({
           <button
             className={`${styles.profileButton}`}
             onClick={onClickProfileButton}
-            aria-label="Toggle Profile"
+            aria-label={`Toggle ${profilePicture}`}
           >
             {profilePicture}
           </button>

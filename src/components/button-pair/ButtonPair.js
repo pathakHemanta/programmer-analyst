@@ -6,7 +6,7 @@ const ButtonPair = ({ enabledValue, disabledValue, leftLabel, rightLabel }) => {
       <button
         className={`${styles.leftButton}`}
         role="button"
-        aria-label={`Count ${enabledValue}`}
+        aria-label={`${enabledValue} ${leftLabel}`}
         aria-live="polite"
       >
         <span className={`${styles.leftCount}`}>{enabledValue}</span>
@@ -15,7 +15,7 @@ const ButtonPair = ({ enabledValue, disabledValue, leftLabel, rightLabel }) => {
       <button
         className={`${styles.rightButton}`}
         role="button"
-        aria-label={`Count ${disabledValue}`}
+        aria-label={`${disabledValue} ${rightLabel}`}
         aria-live="polite"
       >
         <span className={`${styles.rightCount}`}>{disabledValue}</span>
