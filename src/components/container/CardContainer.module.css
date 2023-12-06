@@ -31,14 +31,6 @@
     flex-wrap: wrap;
 }
 
-/* .cards {
-    padding: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-} */
-
 .cards{
     padding: 12px;
     display: grid;

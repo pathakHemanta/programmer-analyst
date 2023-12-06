@@ -7,7 +7,7 @@ const StoreIcon = ({ onClick, altText }) => {
       className={`${styles.storeIcon}`}
       onClick={onClick}
       role="button"
-      aria-label={`Disable ${altText}`}
+      aria-label={`Edit ${altText}`}
     >
       <PiStorefrontLight size={18} />
     </button>

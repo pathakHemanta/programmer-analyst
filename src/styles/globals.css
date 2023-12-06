@@ -1,5 +1,6 @@
 :root {
-    --maroon: #501214;
+    --primaryColor: #501214;
+    --primaryColorDark: #340507;
 }
 
 body {
@@ -18,22 +19,27 @@ main {
     flex-wrap: wrap;
 }
 
-#family {
+#buttonFamily {
     display: flex;
     gap: 20px;
     padding-bottom: 10px;
 }
 
 
-@media (max-width: 800px) {
-    #family {
+@media (max-width: 640px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    #buttonFamily {
         flex-direction: column;
     }
     
-}
-
-@media (min-width: 1280px){
-    .body {
-        min-width: 1280px;
-    }
 }

@@ -9,7 +9,7 @@ const Instruction = () => {
       </p>
       <ol className={`${styles.list}`}>
         <li>Edit {"{department name}"}</li>
-        <li>Edit {"{department name}"}</li>
+        <li>Disable {"{department name}"}</li>
         <li>Edit {"{program name}"}</li>
       </ol>
     </div>
