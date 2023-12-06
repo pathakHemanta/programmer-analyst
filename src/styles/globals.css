@@ -2,3 +2,28 @@ body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    padding: 20px 30px;
+}
+
+#buttons {
+    margin: 5px 0; 
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#family {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 800px) {
+    #family {
+        flex-direction: column;
+    }
+    
+}
