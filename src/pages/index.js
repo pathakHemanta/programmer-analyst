@@ -10,6 +10,7 @@ import ProgramDetailCard from "@/components/program-detail-card/ProgramDetailCar
 import Search from "@/components/search-bar/Search";
 import { Container } from "postcss";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function Home() {
   let placeholder = "Departments and Programs";
@@ -25,6 +26,15 @@ export default function Home() {
   };
   return (
     <>
+      <Head>
+        <title>Programmer Analyst Assessment</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="This is an assessment for the position of programmer analyst at the Texas State University"
+        />
+      </Head>
       <NavigationBar
         pageLabel={"Outcomes Assessment"}
         profilePicture={"WW"}
