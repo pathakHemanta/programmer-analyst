@@ -1,7 +1,7 @@
 .primaryNav {
     display: flex;
     justify-content: space-between;
-    background-color: #501214;
+    background-color: var(--primaryColor);
 }
 
 .menu {
@@ -15,7 +15,7 @@
     justify-content: center;
     border: none;
     color: white;
-    background-color: #340507;
+    background-color: var(--primaryColorDark);
     font-size: 6px;
     padding: 6px 15px;
 }
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    background-color: #501214;
+    background-color: var(--primaryColor);
     border: none;
     color: white;
 }
@@ -35,7 +35,7 @@
 
 .menuButton2Icon {
     background-color: white;
-    color: #501214;
+    color: var(--primaryColor);
     border-radius: 2px;
 }
 
@@ -46,7 +46,7 @@
 
 .profileButton {
     background-color: white;
-    color: #340507;
+    color: var(--primaryColorDark);
     font-weight: bold;
     border: none;
     border-radius: 50%;
@@ -61,7 +61,7 @@
     height: 12px;
     width: 12px;
     background-color: #BFF3FD;
-    border: 1px #340507 solid;
+    border: 1px var(--primaryColor) solid;
 
 }
 

@@ -32,12 +32,13 @@ const Search = ({
         <button
           onClick={onClick}
           className={`${styles.searchIcon}`}
+          role="button"
           aria-label="Search Button"
         >
           <IoMdSearch size={20}></IoMdSearch>
         </button>
       </form>
-      <p className={`${styles.helper}`} role="status" aria-live="assertive">
+      <p className={`${styles.helper}`} role="status" aria-live="polite">
         Viewing {count} of {total}
       </p>
     </div>

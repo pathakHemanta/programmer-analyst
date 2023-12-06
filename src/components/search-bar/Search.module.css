@@ -2,7 +2,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    width: 80%;
+    width: 100%;
     transition: width 2s;
 }
 
@@ -23,15 +23,9 @@
 .searchIcon {
     background-color: white;
     border: none;
+    padding: 3px;
 }
 
 .helper { 
     width: 100%;
-}
-
-@media (min-width: 640px) {
-    .search {
-        width: 90%;
-    }
-    
 }

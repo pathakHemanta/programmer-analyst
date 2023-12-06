@@ -6,7 +6,23 @@ import PrimaryButton from "../buttons/PrimaryButton";
 import ProgramDetailCard from "../program-detail-card/ProgramDetailCard";
 import styles from "./CardContainer.module.css";
 
-const CardContainer = ({ containerHeading }) => {
+const CardContainer = ({
+  containerHeading,
+  cardObjects,
+  onClickPencilIcon,
+  onClickStoreIcon,
+  onClickPrimaryButton,
+  onClickCardPencilIcon,
+  onClickCardLeftButton,
+  onCLickCardRightButton,
+  leftCountButtonPair,
+  rightCountButtonPair,
+  leftLabelButtonPair,
+  rightLabelButtonPair,
+  primaryButtonLabel,
+  cardLeftButtonLabel,
+  cardRightButtonLabel,
+}) => {
   return (
     <article
       className={`${styles.container}`}
@@ -15,42 +31,38 @@ const CardContainer = ({ containerHeading }) => {
       <section className={`${styles.containerNav}`}>
         <span className={`${styles.containerHeader}`}>{containerHeading}</span>
         <section className={`${styles.containerButtons1}`}>
-          <PencilIcon />
-          <StoreIcon />
+          <PencilIcon altText={containerHeading} onClick={onClickPencilIcon} />
+          <StoreIcon altText={containerHeading} onClick={onClickStoreIcon} />
         </section>
       </section>
       <section className={`${styles.containerButtons2}`}>
         <ButtonPair
-          enabledValue={3}
-          disabledValue={0}
-          leftLabel={"Enable"}
-          rightLabel={"Disable"}
+          leftCount={leftCountButtonPair}
+          rightCount={rightCountButtonPair}
+          leftLabel={leftLabelButtonPair}
+          rightLabel={rightLabelButtonPair}
         />
-        <PrimaryButton label={"Add Program"} displayIcon={false} />
+        <PrimaryButton
+          label={primaryButtonLabel}
+          displayIcon={false}
+          onClick={onClickPrimaryButton}
+        />
       </section>
 
       <section className={`${styles.cards}`}>
-        <ProgramDetailCard
-          mainHeading={"Interdisciplinary Studies (MAIS|MSIS)"}
-          secondaryHeading={"30.99 Undergraduate 11 years"}
-          description={"Student Learning (GR)"}
-          leftButtonLabel={"Manage Users"}
-          rightButtonLabel={"Disable"}
-        />
-        <ProgramDetailCard
-          mainHeading={"Applied Arts and Sciences (BAAS)"}
-          secondaryHeading={"30.99 Undergraduate 18 years"}
-          description={"Student Learning (UG)"}
-          leftButtonLabel={"Manage Users"}
-          rightButtonLabel={"Disable"}
-        />
-        <ProgramDetailCard
-          mainHeading={"Management of Technical Education (MEd)"}
-          secondaryHeading={"13.13 Undergraduate 18 years"}
-          description={"Student Learning (GR)"}
-          leftButtonLabel={"Manage Users"}
-          rightButtonLabel={"Disable"}
-        />
+        {cardObjects?.map((card) => (
+          <ProgramDetailCard
+            key={cardObjects.indexOf(card)}
+            mainHeading={card.programName}
+            secondaryHeading={card.programDuration}
+            description={card.programType}
+            onClickPencil={onClickCardPencilIcon}
+            onClickLeftButton={onClickCardLeftButton}
+            onClickRightButton={onCLickCardRightButton}
+            leftButtonLabel={cardLeftButtonLabel}
+            rightButtonLabel={cardRightButtonLabel}
+          />
+        ))}
       </section>
     </article>
   );

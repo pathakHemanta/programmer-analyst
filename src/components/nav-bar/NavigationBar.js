@@ -6,11 +6,11 @@ import styles from "./NavigationBar.module.css";
 
 const NavigationBar = ({
   pageLabel,
-  profilePicture,
-  text,
+  userInitials,
+  secondaryHeading,
   onClickMenuButton,
   onClickHeadingButton,
-  onClickProfileButton,
+  onClickUserInitialsButton,
   onClickBackButton,
 }) => {
   return (
@@ -51,10 +51,10 @@ const NavigationBar = ({
         >
           <button
             className={`${styles.profileButton}`}
-            onClick={onClickProfileButton}
-            aria-label={`Toggle ${profilePicture}`}
+            onClick={onClickUserInitialsButton}
+            aria-label={`Toggle ${userInitials}`}
           >
-            {profilePicture}
+            {userInitials}
           </button>
           <span
             className={`${styles.notify}`}
@@ -71,10 +71,10 @@ const NavigationBar = ({
         <button
           className={`${styles.secondNavButton}`}
           onClick={onClickBackButton}
-          aria-label={`Go Back: ${text}`}
+          aria-label={`Go Back: ${secondaryHeading}`}
         >
           <IoChevronBackSharp />
-          <span>{text}</span>
+          <span>{secondaryHeading}</span>
         </button>
       </nav>
     </div>

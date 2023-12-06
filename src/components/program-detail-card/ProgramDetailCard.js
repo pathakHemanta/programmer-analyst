@@ -9,6 +9,8 @@ const ProgramDetailCard = ({
   description,
   onClickPencil,
   leftButtonLabel,
+  onClickLeftButton,
+  onClickRightButton,
   rightButtonLabel,
 }) => {
   return (
@@ -33,8 +35,16 @@ const ProgramDetailCard = ({
         </section>
       </section>
       <section className={`${styles.buttons}`}>
-        <SecondaryButton label={leftButtonLabel} width={"full"} />
-        <SecondaryButton label={rightButtonLabel} width={"full"} />
+        <SecondaryButton
+          label={leftButtonLabel}
+          width={"full"}
+          onClick={onClickLeftButton}
+        />
+        <SecondaryButton
+          label={rightButtonLabel}
+          width={"full"}
+          onClick={onClickRightButton}
+        />
       </section>
     </article>
   );
