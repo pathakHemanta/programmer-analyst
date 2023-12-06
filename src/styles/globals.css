@@ -1,3 +1,7 @@
+:root {
+    --maroon: #501214;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -26,4 +30,10 @@ main {
         flex-direction: column;
     }
     
+}
+
+@media (min-width: 1280px){
+    .body {
+        min-width: 1280px;
+    }
 }

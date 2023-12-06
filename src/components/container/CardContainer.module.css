@@ -1,9 +1,10 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100%; 
     background-color: #E5E5E5;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 3px 2px #D6D3D1;
 }
 
 .containerNav {
@@ -30,10 +31,31 @@
     flex-wrap: wrap;
 }
 
-.cards {
+/* .cards {
     padding: 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
+} */
+
+.cards{
+    padding: 12px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .cards {
+             grid-template-columns: auto auto;
+            justify-content: space-evenly;
+        }
+}
+@media (max-width: 640px) {
+    .cards {
+        grid-template-columns: auto;
+    }
+    
 }

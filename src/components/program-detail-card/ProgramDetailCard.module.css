@@ -5,6 +5,7 @@
     background-color: #F5F5F4;
     box-shadow: 0 0 3px 2px #D6D3D1;
     font-family: Arial, Helvetica, sans-serif;
+    transition: width 2s;
 }
 
 .description {
@@ -28,10 +29,4 @@
     display: flex;
     justify-content: space-between;
     gap: 2px;
-}
-
-@media (min-width: 440px) {
-    .card {
-        width: 440px;
-    }
 }
