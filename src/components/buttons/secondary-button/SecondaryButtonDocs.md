@@ -1,30 +1,33 @@
-# PrimaryButton Component
+# SecondaryButton Component
 
-The PrimaryButton component represents a primary action button with an optional icon. It is designed to be a versatile button for various interactions.
+The SecondaryButton component represents a secondary action button with optional
+customization for label, icon, and width. It is designed to complement primary
+actions in a user interface.
 
 ```
-    @typedef {Object} PrimaryButtonProps
+    @typedef {Object} SecondaryButtonProps
     @property {string} label - The label or text content of the button.
     @property {boolean} displayIcon - A flag to determine if an icon should be displayed.
+    @property {string} width - The width of the button. Use "full" for 100% width.
     @property {function} onClick - The callback function to be executed on button click.
 
-
-    @function PrimaryButton
-    @param {PrimaryButtonProps} props - The properties passed to the component.
-    @returns {JSX.Element} - The rendered PrimaryButton component.
+    @function SecondaryButton
+    @param {SecondaryButtonProps} props - The properties passed to the component.
+    @returns {JSX.Element} - The rendered SecondaryButton component.
 
 ```
 
 ### Example 1: Basic usage without an icon
 
 ```
-    <PrimaryButton label="Submit" onClick={() => handleSubmit()} />
+
+    <SecondaryButton label="Cancel" onClick={() => handleCancel()} />
 ```
 
-### Example 2: With an icon
+### Example 2: With an icon and full width
 
 ```
-    <PrimaryButton label="Edit" displayIcon={true} onClick={() => handleEdit()} />
+    <SecondaryButton label="Edit" displayIcon={true} width="full" onClick={() => handleEdit()} />
 ```
 
 ### Accessibility Considerations:
@@ -35,7 +38,7 @@ The PrimaryButton component represents a primary action button with an optional 
 ### Styling:
 
 - This component uses a CSS module for styling.
-- Styles are defined in PrimaryButton.module.css.
+- Styles are defined in SecondaryButton.module.css.
 - You can customize the appearance by modifying the styles in the CSS module.
 
 ### Future Expansion:
@@ -46,6 +49,6 @@ The PrimaryButton component represents a primary action button with an optional 
 
 ### Additional Notes:
 
-- Ensure that the button label is clear and actionable.
+- Ensure that the button label is clear and complements primary actions.
 - Customize the component to fit your application's design system.
 - Handle onClick events appropriately for the intended functionality.

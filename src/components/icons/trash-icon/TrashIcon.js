@@ -1,7 +1,7 @@
 import { PiStorefrontLight } from "react-icons/pi";
-import styles from "./StoreIcon.module.css";
+import styles from "./TrashIcon.module.css";
 
-const StoreIcon = ({ onClick, altText }) => {
+const TrashIcon = ({ onClick, altText }) => {
   return (
     <button
       className={`${styles.storeIcon}`}
@@ -14,4 +14,4 @@ const StoreIcon = ({ onClick, altText }) => {
   );
 };
 
-export default StoreIcon;
+export default TrashIcon;

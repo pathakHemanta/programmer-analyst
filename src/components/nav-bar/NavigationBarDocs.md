@@ -1,8 +1,6 @@
 # NavigationBar Component
 
-- The NavigationBar component is a customizable navigation bar that allows users
-- to navigate between different sections of the application. It includes buttons
-- for menu toggling, heading navigation, user profile, and a back button with label.
+The NavigationBar component is a customizable navigation bar that allows users to navigate between different sections of the application. It includes buttons for menu toggling, heading navigation, user profile, and a back button with label.
 
 ```
     @typedef {Object} NavigationBarProps

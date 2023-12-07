@@ -4,10 +4,14 @@ import CardContainer from "@/components/container/CardContainer";
 import Instruction from "@/components/instruction/Instruction";
 import NavigationBar from "@/components/nav-bar/NavigationBar";
 import Search from "@/components/search-bar/Search";
-import ProgramDetailCard from "@/components/program-detail-card/ProgramDetailCard";
 import Head from "next/head";
 
+/**
+ * @function Home
+ * @returns {JSX.Element} - The rendered Home Component
+ */
 export default function Home() {
+  // Sample Data to recreate the given design
   const programs = [
     {
       programName: "Interdisciplinary Studies (MAIS|MSIS)",
@@ -26,6 +30,7 @@ export default function Home() {
     },
   ];
 
+  // Dummy function to ensure button functionality in components
   function handleClick(e) {
     e.preventDefault();
     alert("You clicked a button!!");
@@ -33,7 +38,7 @@ export default function Home() {
 
   return (
     <>
-      {/* This is the head component of the index page */}
+      {/* head component of the html document created */}
       <Head>
         <title>Programmer Analyst Assessment</title>
         <meta charSet="utf-8" />
@@ -44,7 +49,7 @@ export default function Home() {
         />
       </Head>
 
-      {/* methods are assigned to respective attrubutes based on the application */}
+      {/* NavigationBar component rendered with mock data */}
       <NavigationBar
         pageLabel={"Outcomes Assessment"}
         userInitials={"WW"}
@@ -57,7 +62,7 @@ export default function Home() {
       <main>
         <div id="buttonFamily">
           <div>
-            {/* value and onChange properties are set based on the application */}
+            {/* Search Component with mock values to recreate the Figma Design*/}
             <Search
               id={"departments_programs"}
               name={"departments_programs"}
@@ -67,12 +72,14 @@ export default function Home() {
               total={4}
             />
             <div id="buttons">
+              {/* ButtonPair component with mock values to recreate the Figma Design */}
               <ButtonPair
                 leftCount={1}
                 rightCount={0}
                 leftLabel={"Enabled Departments"}
                 rightLabel={"Disabled Departments"}
               />
+              {/* PrimaryButton component with mock values to recreate the Figma Design */}
               <PrimaryButton
                 displayIcon={false}
                 label={"Add Department"}
@@ -84,6 +91,8 @@ export default function Home() {
             <Instruction />
           </div>
         </div>
+
+        {/* CardContainer with mock values to recreate the Figma Design */}
         <CardContainer
           containerHeading={"Organization, Workforce, and Leadership Studies"}
           cardObjects={programs}

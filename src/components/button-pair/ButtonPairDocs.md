@@ -1,7 +1,6 @@
 # ButtonPair Component
 
-- The ButtonPair component renders a pair of buttons, each displaying a count
-- and a label. It is designed for scenarios where users need to make a binary choice.
+The ButtonPair component renders a pair of buttons, each displaying a count and a label. It is designed for scenarios where users need to make a binary choice.
 
 ```
     @typedef {Object} ButtonPairProps
@@ -26,9 +25,9 @@
     />
 ```
 
-```
 ### Example 2: Custom labels and counts
 
+```
     <ButtonPair
         leftCount={10}
         rightCount={15}
