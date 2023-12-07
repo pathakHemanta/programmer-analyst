@@ -2,7 +2,7 @@ import React from "react";
 import PencilIcon from "../icons/PencilIcon";
 import StoreIcon from "../icons/StoreIcon";
 import ButtonPair from "../button-pair/ButtonPair";
-import PrimaryButton from "../buttons/PrimaryButton";
+import PrimaryButton from "../buttons/primary-button/PrimaryButton";
 import ProgramDetailCard from "../program-detail-card/ProgramDetailCard";
 import styles from "./CardContainer.module.css";
 

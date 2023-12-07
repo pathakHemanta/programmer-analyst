@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./ButtonPair.module.css";
 
 const ButtonPair = ({ leftCount, rightCount, leftLabel, rightLabel }) => {
@@ -9,7 +10,7 @@ const ButtonPair = ({ leftCount, rightCount, leftLabel, rightLabel }) => {
         aria-label={`${leftCount} ${leftLabel}`}
         aria-live="polite"
       >
-        <span className={`${styles.leftCount}`} aria-live="polite">
+        <span className={`${styles.leftCountStyle}`} aria-live="polite">
           {leftCount}
         </span>
         <span>{leftLabel}</span>
@@ -20,7 +21,7 @@ const ButtonPair = ({ leftCount, rightCount, leftLabel, rightLabel }) => {
         aria-label={`${rightCount} ${rightLabel}`}
         aria-live="polite"
       >
-        <span className={`${styles.rightCount}`} aria-live="polite">
+        <span className={`${styles.rightCountStyle}`} aria-live="polite">
           {rightCount}
         </span>
         <span>{rightLabel}</span>

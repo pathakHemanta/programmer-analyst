@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMdMenu } from "react-icons/io";
 import { CgPlayListCheck } from "react-icons/cg";
 import { IoChevronBackSharp } from "react-icons/io5";

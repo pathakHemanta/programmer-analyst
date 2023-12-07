@@ -1,9 +1,10 @@
 import ButtonPair from "@/components/button-pair/ButtonPair";
-import PrimaryButton from "@/components/buttons/PrimaryButton";
+import PrimaryButton from "@/components/buttons/primary-button/PrimaryButton";
 import CardContainer from "@/components/container/CardContainer";
 import Instruction from "@/components/instruction/Instruction";
 import NavigationBar from "@/components/nav-bar/NavigationBar";
 import Search from "@/components/search-bar/Search";
+import ProgramDetailCard from "@/components/program-detail-card/ProgramDetailCard";
 import Head from "next/head";
 
 export default function Home() {
@@ -47,7 +48,7 @@ export default function Home() {
       <NavigationBar
         pageLabel={"Outcomes Assessment"}
         userInitials={"WW"}
-        secondaryHeading={"Applied Arts Department and Programs"}
+        secondaryHeading={"Applied Arts Departments and Programs"}
         onClickMenuButton={handleClick}
         onClickHeadingButton={handleClick}
         onClickBackButton={handleClick}
@@ -60,7 +61,7 @@ export default function Home() {
             <Search
               id={"departments_programs"}
               name={"departments_programs"}
-              placeholder={"Departments and Programs"}
+              placeholder={"Department and Programs"}
               onClick={handleClick}
               count={2}
               total={4}
@@ -69,8 +70,8 @@ export default function Home() {
               <ButtonPair
                 leftCount={1}
                 rightCount={0}
-                leftLabel={"Enable Departments"}
-                rightLabel={"Disable Departments"}
+                leftLabel={"Enabled Departments"}
+                rightLabel={"Disabled Departments"}
               />
               <PrimaryButton
                 displayIcon={false}
