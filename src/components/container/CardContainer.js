@@ -1,8 +1,8 @@
 import React from "react";
-import PencilIcon from "../icons/PencilIcon";
-import StoreIcon from "../icons/StoreIcon";
+import PencilIcon from "../icons/pencil-icon/PencilIcon";
+import TrashIcon from "../icons/trash-icon/TrashIcon";
 import ButtonPair from "../button-pair/ButtonPair";
-import PrimaryButton from "../buttons/PrimaryButton";
+import PrimaryButton from "../buttons/primary-button/PrimaryButton";
 import ProgramDetailCard from "../program-detail-card/ProgramDetailCard";
 import styles from "./CardContainer.module.css";
 
@@ -32,7 +32,7 @@ const CardContainer = ({
         <span className={`${styles.containerHeader}`}>{containerHeading}</span>
         <section className={`${styles.containerButtons1}`}>
           <PencilIcon altText={containerHeading} onClick={onClickPencilIcon} />
-          <StoreIcon altText={containerHeading} onClick={onClickStoreIcon} />
+          <TrashIcon altText={containerHeading} onClick={onClickStoreIcon} />
         </section>
       </section>
       <section className={`${styles.containerButtons2}`}>

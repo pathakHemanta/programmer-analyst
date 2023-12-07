@@ -1,7 +1,7 @@
 import React from "react";
-import PencilIcon from "../icons/PencilIcon";
+import PencilIcon from "../icons/pencil-icon/PencilIcon";
 import styles from "./ProgramDetailCard.module.css";
-import SecondaryButton from "../buttons/SecondaryButton";
+import SecondaryButton from "../buttons/secondary-button/SecondaryButton";
 
 const ProgramDetailCard = ({
   mainHeading,

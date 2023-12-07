@@ -6,6 +6,7 @@
 
 .heading {
     text-decoration: underline;
+    font-weight: bold;
     margin: none;
     color: #00507A;
 }
