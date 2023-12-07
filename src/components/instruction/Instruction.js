@@ -3,7 +3,7 @@ import styles from "./Instruction.module.css";
 
 const Instruction = () => {
   return (
-    <div className={`${styles.box}`}>
+    <section className={`${styles.box}`}>
       <p className={`${styles.heading}`}>
         Announced Content for assistive technologies
       </p>
@@ -12,7 +12,7 @@ const Instruction = () => {
         <li>Disable {"{department name}"}</li>
         <li>Edit {"{program name}"}</li>
       </ol>
-    </div>
+    </section>
   );
 };
 
