@@ -1,6 +1,9 @@
 import ButtonPair from "@/components/button-pair/ButtonPair";
 import PrimaryButton from "@/components/buttons/primary-button/PrimaryButton";
+import SecondaryButton from "@/components/buttons/secondary-button/SecondaryButton";
 import CardContainer from "@/components/container/CardContainer";
+import PencilIcon from "@/components/icons/pencil-icon/PencilIcon";
+import TrashIcon from "@/components/icons/trash-icon/TrashIcon";
 import Instruction from "@/components/instruction/Instruction";
 import NavigationBar from "@/components/nav-bar/NavigationBar";
 import Search from "@/components/search-bar/Search";
@@ -111,6 +114,23 @@ export default function Home() {
           cardRightButtonLabel={"Disable"}
         />
       </main>
+      <div id="buttonsAndIcons">
+        <PrimaryButton label={"Primary Button"} onClick={handleClick} />
+        <PrimaryButton
+          label={"Primary Button"}
+          displayIcon={true}
+          onClick={handleClick}
+        />
+        <SecondaryButton label={"Secondary Button"} onClick={handleClick} />
+        <SecondaryButton
+          label={"Secondary Button"}
+          displayIcon={true}
+          onClick={handleClick}
+        />
+        <PencilIcon pencilColor={"dark"} onClick={handleClick} />
+        <PencilIcon onClick={handleClick} />
+        <TrashIcon onClick={handleClick} />
+      </div>
     </>
   );
 }
